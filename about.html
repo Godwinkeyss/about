@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"  />
+    <link rel="stylesheet" href="about.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+            <!-- CSS -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+        <!-- Default theme -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    
+   
+
+</head>
+<body>
+   <!-- navbar start -->
+<!-- <nav class="navbar navbar-expand-lg bg-light fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fs-1 logo" href="index.php">SLAYBEAST</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.php">HOME</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="products.php">PRODUCTS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            
+            
+            </ul>
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="account.php">ACCOUNT</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="carts.php">
+                            <i class="fa-solid fa-bag-shopping cart "style="font-size:20px">
+                             <?php if(isset($_SESSION['cart'])) { ?>
+                                <span class="cart-quantity"style="background:red;color:white;border-radius:50%;padding:3px 6px;font-size:12px;position:absolute;top:28px"><?php echo count($_SESSION['cart']);  ?></span>
+
+                                
+                            <?php } ?>
+                            </i>
+                          
+                        </a>
+            
+                
+                </li>
+            </ul>
+            </div>
+        </div>
+</nav> -->
+<header class="headers">
+        <nav class="navs">
+            <div class="left">
+                <div class="bug">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </div>
+                <h1><a href="index.php"> SLAYBEAST</a> </h1>
+           </div>
+            <div class="center">
+                <ul>
+                    <li><a href="index.php">HOME</a></li>
+                    <li><a href="products.php">PRODUCTS</a></li>
+                    <!-- <li><a href="">ABOUT</a></li> -->
+                    <li><a href="contact.php">CONTACT</a></li>
+                    <li class="reg regs"><a href="account.php">REGISTER/<i class="fa-regular fa-user"></i></a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li class="reg">
+                        <a href="account.php">
+                            <i class="fa-regular fa-user bag"></i>
+                           
+                        </a>
+                
+                    </li>
+                    <li><a href="show_wishlist.php"><i class="fa-regular fa-heart bag">
+                      <!-- <?php  if(count($wish)>0){?>
+                    <span class="cart-quantity"style="background:red;color:white;border-radius:50%;padding:3px 6px;font-size:12px;position:absolute;top:28px">
+                            <?php echo count($wish);  ?>
+                    </span>
+                    <?php  } ?> -->
+                    </i></a></li>
+                    <li><a href="carts.php"><i class="fa-solid fa-bag-shopping cart">
+                    <!-- <?php if(isset($_SESSION['cart']) && $_SESSION['cart']>0) { ?>
+                                <span class="cart-quantity"style="background:red;color:white;border-radius:50%;padding:3px 6px;font-size:12px;position:absolute;top:28px"><?php echo count($_SESSION['cart']);  ?></span>
+
+                                
+                            <?php } ?> -->
+                    </i></a></li>
+                </ul>
+            </div>
+         </nav>
+    </header>
+<!-- about staret -->
+
+<section class="about mt-5 pt-5">
+    <div class="about-wrapper container">
+    <h1 class="mt-5 pt-5 pb-3">About</h1>
+    <div class="about-body">
+        <p>For Slay Beast it is very important that you feel comfortable with your body, that you are happy and that you show confidence and sexyness when you wear any garment.
+
+            Love yourself because you are beautiful.</p>
+
+
+    </div>
+    <div class="about-img">
+        <img src="./images/imgonline-com-ua-CompressToSize-BkZVxmNUJ1Atv.jpg" alt="">
+    </div>
+    <div class="image-body">
+       <p> Slay Beast is a dream come true. It started 6 years ago seeing how a simple garment brought a smile and happiness, and since then we started a long journey of understanding, visualizing and learning how to start a clothing line.
+        It is a clothing line that aims to show the world that dressing in it should make you feel happy, sexy and beautiful. And it has the objective of showing the beauty of each person without having a specific age.
+       Janne is the woman behind the Slay Beast. A visionary woman with characteristic taste who only seeks empowerment through her outfits.
+       It was a difficult process, but in the end we are here to show it.
+       Sexy clothes, with little fabric... It is the perfect combination with our bodies. By this we mean that it doesn't matter how we are, but how we feel and what we want to express and show the world.
+       That's why…
+       SLAY BEAST
+       SLAY YOUR INNER BEAST + BE YOU
+       BE PROUD OF YOURSELF
+       BE SEXY
+       BE GLORIOUS
+       ALWAYS AND FOREVER JANNE</p>
+    </div>
+</div>
+
+
+<!-- footer section start -->
+<section class="footer ">
+    <footer class="container ">
+        <div class="row">
+            <h1 class="fs-2 my-4">SLAYBEAST</h1>
+            <div class="col-md-3">
+               <h1>Company</h1>
+               <p><a href="index.php">HOME</a></p>
+               <p><a href="products.php">PRODUCTS</a></p>
+             
+               <p> <a href="contact.php">CONTACT</a>  </p>
+            </div>
+            <div class="col-md-3">
+                <p> <a href="terms.php">TERMS OF SERVICES</a> </p>
+                <p> <a href="refund.php">REFUND POLICY</a> </p>
+            </div>
+            <div class="col-md-3">
+                <h1>SHOP ONLINE</h1>
+                <p><a href="shipping.php">SHIPPING</a> </p>
+                <p> <a href="returns_exchange.php"> RETURN/EXCHANGE</a></p>
+            </div>
+            <div class="col-md-3">
+                <h1>FOLLOW US</h1>
+                <div class="icons">
+                    
+                    <a href="https://www.instagram.com/_slaybeast/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100083164305222" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@_slaybeast" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <!-- <a href=""><i class="fa-brands fa-twitter"></i></a> -->
+                    <i class="fa-brands fa-youtube"></i>
+                 
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-footer">
+        <p>2022 &copy;. All Rights Reserved.</p>
+    </div>
+   </section>
+<!-- footer section end -->
+
+
+  
+
+
+
+</section>
+
+
+    <script>
+        let center = document.querySelector('.center')
+let bug = document.querySelector('.bug')
+
+bug.addEventListener('click',()=>{
+    bug.classList.toggle('active');
+    center.classList.toggle('active');
+})
+
+    </script>
+<!-- navbar end -->
+
+</body>
+</html>
